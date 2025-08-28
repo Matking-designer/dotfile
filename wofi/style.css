@@ -1,0 +1,31 @@
+window{
+  font-size: 28px;
+  font-family: "Roboto Mono Medium";
+  background: rgba(50,50,50,0.9);
+  color: white;
+  border-radius: 0.5em;
+}
+
+#entry:selected {
+  background-color: #c9e86a;
+  box-shadow: -5px -10px 10px rgba(0, 0, 0, 0.29) inset, 5px 10px 10px rgba(0, 0, 0, 0.29) inset;
+}
+
+#text:selected{
+  color: #333333;
+}
+#entry{
+  border-radius: 0.29em;
+  padding:0.25em;
+
+}
+
+#input{
+  content: "Mes";
+  box-shadow: 0 5px 4px  rgb(40, 40, 40);
+  border-radius: 0.5em;
+  border: transparent;
+  background-color: rgba(50,50,50,0.5);
+  color: white;
+  padding: 0.25em;
+}

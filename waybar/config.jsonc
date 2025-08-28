@@ -1,0 +1,100 @@
+// -*- mode: jsonc -*-
+[
+    {
+      "name": "bar-one",
+      "output":"DP-3",
+      "height": 30,
+      "position":"bottom",
+      "modules-center":[
+      "niri/window"
+      ],
+      "modules-right":[
+      "hyprland/workspaces",
+      "clock",
+      "tray"
+      ],
+
+      "tray": {
+        // "icon-size": 21,
+        "spacing": 10
+      },
+
+      "niri/window":{
+      "format":"{title}"
+      },
+      
+      "clock": {
+        // "timezone": "America/New_York",
+        "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
+        "format-alt": "{:%Y-%m-%d}",
+        "format": "{:%H:%M | %m-%d}"
+      },
+      
+      "hyprland/workspaces": {
+      "format": "{name}",
+      "on-click": "activate",
+      "sort-by-number": true
+      }
+    },
+    {
+      "name":"bar-two",
+      "output":"HDMI-A-1",
+      "height": 30,
+      "position":"top",
+      "modules-left":[
+      "network",
+      "cpu",
+      "memory"
+      ],
+      "modules-center":[
+      "user"
+      ],
+      "modules-right":[
+      "hyprland/workspaces",
+      "clock",
+      "tray"
+      ],
+
+      "tray": {
+        // "icon-size": 21,
+        "spacing": 10
+      },
+
+      "network": {
+        // "interface": "wlp2*", // (Optional) To force the use of this interface
+        "format-wifi": "{essid} ({signalStrength}%) ",
+        "format-ethernet": "{ipaddr}/{cidr} E",
+        "tooltip-format": "{ifname} via {gwaddr} ",
+        "format-linked": "{ifname} (No IP) ",
+        "format-disconnected": "Disconnected ⚠",
+        "format-alt": "{ifname}: {ipaddr}/{cidr}"
+      },
+      
+      "cpu": {
+        "format": "{usage}% C",
+        "tooltip": false
+      },
+
+      "memory": {
+        "format": "{}% M"
+      },
+      
+      "user":{
+        "format":"{user}",
+        "open-on-click":false
+      },
+
+      "clock": {
+        // "timezone": "America/New_York",
+        "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
+        "format-alt": "{:%Y-%m-%d}",
+        "format": "{:%H:%M | %m-%d}"
+      },
+
+      "hyprland/workspaces": {
+      "format": "{name}",
+      "on-click": "activate",
+    
+      }
+    }
+  ]
