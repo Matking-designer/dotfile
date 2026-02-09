@@ -1,0 +1,39 @@
+// -*- mode: jsonc -*-
+[
+    {
+      "name": "bar-one",
+      "output":"eDP-1",
+      "height": 30,
+      "position":"bottom",
+      "modules-center":[
+      "niri/window"
+      ],
+      "modules-right":[
+      "hyprland/workspaces",
+      "clock",
+      "tray"
+      ],
+
+      "tray": {
+        // "icon-size": 21,
+        "spacing": 10
+      },
+
+      "niri/window":{
+      "format":"{title}"
+      },
+      
+      "clock": {
+        // "timezone": "America/New_York",
+        "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
+        "format-alt": "{:%Y-%m-%d}",
+        "format": "{:%H:%M | %m-%d}"
+      },
+      
+      "hyprland/workspaces": {
+      "format": "{name}",
+      "on-click": "activate",
+      "sort-by-number": true
+      }
+    }
+]
