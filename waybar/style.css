@@ -102,6 +102,11 @@ button:hover {
     margin: 0 10px;
 }
 
+#workspaces button.active{
+	background-color: rgba(0,200,0,0.4);
+	color:#000000;
+	border-radius:5px;
+}
 /* If workspaces is the leftmost module, omit left margin */
 .modules-left > widget:first-child > #workspaces {
     margin-left: 10px;
