@@ -8,9 +8,15 @@
       "modules-center":[
       "niri/window"
       ],
+      "modules-left":[
+
+      "hyprland/workspaces"
+
+      ],
       "modules-right":[
-      "hyprland/workspaces",
+      "battery",
       "clock",
+
       "tray"
       ],
 
@@ -22,6 +28,18 @@
       "niri/window":{
       "format":"{title}"
       },
+
+      "battery": {
+    	"bat": "BAT0",
+    	"interval": 60,
+    	"states": {
+        	"warning": 30,
+        	"critical": 15
+    	},
+    	"format": "{icon}",
+    	"format-icons": ["", "", "", "", ""],
+    	"max-length": 25
+	},
       
       "clock": {
         // "timezone": "America/New_York",

@@ -1,6 +1,6 @@
 * {
     /* `otf-font-awesome` is required to be installed for icons */
-    font-family: FontAwesome, Roboto, Helvetica, Arial, sans-serif;
+    font-family: Roboto, Helvetica, Arial, sans-serif;
     font-size: 20px;
 }
 
@@ -104,12 +104,12 @@ button:hover {
 
 /* If workspaces is the leftmost module, omit left margin */
 .modules-left > widget:first-child > #workspaces {
-    margin-left: 0;
+    margin-left: 10px;
 }
 
 /* If workspaces is the rightmost module, omit right margin */
 .modules-right > widget:last-child > #workspaces {
-    margin-right: 0;
+    margin-right: 10px;
 }
 
 #clock {
@@ -117,8 +117,12 @@ button:hover {
 }
 
 #battery {
-    background-color: #ffffff;
-    color: #000000;
+    padding-left: 9px;
+    padding-right: 15px;
+    min-width: 20px;
+    border-radius:0.7rem;
+    background-color: rgba(0, 0, 0, 0.4);
+    color: #ffffff;
 }
 
 #battery.charging, #battery.plugged {
