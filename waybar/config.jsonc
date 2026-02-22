@@ -6,11 +6,13 @@
       "output":"DP-3",
       "height": 30,
       "position":"bottom",
+      "modules-left":[
+      "hyprland/workspaces",
+      ],
       "modules-center":[
       "niri/window"
       ],
       "modules-right":[
-      "hyprland/workspaces",
       "clock",
       "tray"
       ],

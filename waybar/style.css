@@ -1,6 +1,6 @@
 * {
     /* `otf-font-awesome` is required to be installed for icons */
-    font-family: FontAwesome, Roboto, Helvetica, Arial, sans-serif;
+    font-family: Roboto, Helvetica, Arial, sans-serif;
     font-size: 20px;
 }
 
@@ -9,6 +9,7 @@ window#waybar {
     color: #ffffff;
     transition-property: background-color;
     transition-duration: .5s;
+    
 }
 
 window#waybar.hidden {
@@ -102,23 +103,45 @@ button:hover {
     margin: 0 10px;
 }
 
+#workspaces button.active{
+	/*background-color: rgba(10,150,20,1);*/
+ 	background-color: #26A65B;
+	color:#ffffff;
+	border-radius:5px;
+}
 /* If workspaces is the leftmost module, omit left margin */
 .modules-left > widget:first-child > #workspaces {
-    margin-left: 0;
+    margin-left: 10px;
 }
 
 /* If workspaces is the rightmost module, omit right margin */
 .modules-right > widget:last-child > #workspaces {
-    margin-right: 0;
+    margin-right: 10px;
+}
+
+.modules-right{
+  margin-top:5px;
+  margin-bottom:5px;
+}
+
+.modules-left{
+  margin-top:5px;
+  margin-bottom:5px;
 }
 
 #clock {
-    background-color: transparent;
+  border-radius: 5px;
+    background-color: rgba(0,0,0,0.4);
 }
 
 #battery {
-    background-color: #ffffff;
-    color: #000000;
+	margin-right: 17px;
+    padding-left: 9px;
+    padding-right: 15px;
+    min-width: 20px;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.4);
+    color: #ffffff;
 }
 
 #battery.charging, #battery.plugged {
@@ -234,6 +257,7 @@ label:focus {
 }
 
 #tray {
+    
     background-color: transparent;
 }
 
