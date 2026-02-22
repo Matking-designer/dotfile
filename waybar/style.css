@@ -9,6 +9,7 @@ window#waybar {
     color: #ffffff;
     transition-property: background-color;
     transition-duration: .5s;
+    
 }
 
 window#waybar.hidden {
@@ -103,8 +104,9 @@ button:hover {
 }
 
 #workspaces button.active{
-	background-color: rgba(0,200,0,0.4);
-	color:#000000;
+	/*background-color: rgba(10,150,20,1);*/
+ 	background-color: #26A65B;
+	color:#ffffff;
 	border-radius:5px;
 }
 /* If workspaces is the leftmost module, omit left margin */
@@ -117,15 +119,27 @@ button:hover {
     margin-right: 10px;
 }
 
+.modules-right{
+  margin-top:5px;
+  margin-bottom:5px;
+}
+
+.modules-left{
+  margin-top:5px;
+  margin-bottom:5px;
+}
+
 #clock {
-    background-color: transparent;
+  border-radius: 5px;
+    background-color: rgba(0,0,0,0.4);
 }
 
 #battery {
+	margin-right: 17px;
     padding-left: 9px;
     padding-right: 15px;
     min-width: 20px;
-    border-radius:0.7rem;
+    border-radius: 5px;
     background-color: rgba(0, 0, 0, 0.4);
     color: #ffffff;
 }
@@ -243,6 +257,7 @@ label:focus {
 }
 
 #tray {
+    
     background-color: transparent;
 }
 

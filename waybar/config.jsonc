@@ -3,7 +3,7 @@
     {
       "name": "bar-one",
       "output":"eDP-1",
-      "height": 30,
+      "height": 40,
       "position":"bottom",
       "modules-center":[
       "niri/window"
