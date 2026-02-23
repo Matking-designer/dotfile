@@ -130,12 +130,13 @@ button:hover {
 }
 
 #clock {
+  margin-right:10px;
   border-radius: 5px;
     background-color: rgba(0,0,0,0.4);
 }
 
 #battery {
-	margin-right: 17px;
+	margin-right: 10px;
     padding-left: 9px;
     padding-right: 15px;
     min-width: 20px;
