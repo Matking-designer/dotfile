@@ -2,8 +2,9 @@
 
 format = """
 [](surface0)\
-$os\
 $username\
+[|](white bold bg:surface0)\
+$hostname\
 [](bg:peach fg:surface0)\
 $directory\
 [](fg:peach bg:green)\
@@ -69,6 +70,11 @@ surface0 = "#313244"
 base = "#1e1e2e"
 mantle = "#181825"
 crust = "#11111b"
+
+[hostname]
+ssh_only = false
+format = '[ $hostname ](green bold bg:surface0)'
+disabled = false 
 
 [os]
 disabled = true

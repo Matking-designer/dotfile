@@ -14,9 +14,10 @@ window{
 #text:selected{
   color: #333333;
 }
+
 #entry{
   border-radius: 0.29em;
-  padding:0.25em;
+  padding:0.25em 30px;
 
 }
 
