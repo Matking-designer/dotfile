@@ -1,13 +1,13 @@
 window{
   font-size: 28px;
   font-family: "Roboto Mono Medium";
-  background: rgba(50,50,50,0.9);
+  background: rgba(26,26,26,0.5);
   color: white;
   border-radius: 0.5em;
 }
 
 #entry:selected {
-  background-color: #c9e86a;
+  background-color: white;
   box-shadow: -5px -10px 10px rgba(0, 0, 0, 0.29) inset, 5px 10px 10px rgba(0, 0, 0, 0.29) inset;
 }
 

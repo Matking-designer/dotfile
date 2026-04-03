@@ -5,12 +5,40 @@
 }
 
 window#waybar {
-    background-color: rgba(0, 0, 0,0.25 );
     color: #ffffff;
     transition-property: background-color;
     transition-duration: .5s;
     
 }
+
+window#waybar.top > *{
+  margin-top:10px;
+  margin-bottom:10px;
+}
+window#waybar.bottom > *{
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+window#waybar.top{
+      background: linear-gradient(to top, rgba(0, 0, 0, 0)20%,rgba(0, 0, 0, 0.3) , rgba(0, 0, 0, 0.5) 100%);
+}
+
+window#waybar.bottom{
+      background: linear-gradient(to bottom, rgba(0, 0, 0, 0)20%,rgba(0, 0, 0, 0.3) , rgba(0, 0, 0, 0.5) 100%);
+
+}
+
+.modules-left, 
+.modules-right {
+    background-color: rgba(26,26,26,1);
+    /* Gölgenin kesilmemesi ve blokların ekrana yapışmaması için boşluklar */
+    margin:0 20px;
+    border-radius: 5px;
+
+}
+
+
 
 window#waybar.hidden {
     opacity: 0.2;
@@ -54,9 +82,10 @@ button:hover {
 }
 
 #workspaces button {
-    padding: 0 10px;
+    padding: 0 8px;
     background-color: transparent;
     color: #ffffff;
+    margin-left:10px
 }
 
 #workspaces button:hover {
@@ -100,38 +129,33 @@ button:hover {
 
 #window,
 #workspaces {
-    margin: 0 10px;
+    margin: 0 0px;
 }
 
 #workspaces button.active{
 	/*background-color: rgba(10,150,20,1);*/
- 	background-color: #00AB78;
-	color:#ffffff;
+  background-color: rgba(256,256,256,1);
+	color:rgb(26,26,26);
 	border-radius:5px;
 }
 /* If workspaces is the leftmost module, omit left margin */
 .modules-left > widget:first-child > #workspaces {
-    margin-left: 10px;
+    margin-left: 0px;
 }
+.modules-right .modules-left, #workspaces button:first-child {
+    margin-left: 0px;
+}
+
 
 /* If workspaces is the rightmost module, omit right margin */
 .modules-right > widget:last-child > #workspaces {
-    margin-right: 10px;
+    margin-right: 0px;
 }
 
-.modules-right{
-  margin-top:5px;
-  margin-bottom:5px;
-}
 
-.modules-left{
-  margin-top:5px;
-  margin-bottom:5px;
-}
 
 #clock {
   border-radius: 5px;
-    background-color: rgba(0,0,0,0.4);
 }
 
 #battery {
